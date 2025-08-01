@@ -13,7 +13,8 @@ This is a Django-based voting system that allows authenticated users to create p
 1.  Clone the repository
 2.  Install dependencies: `pip install -r requirements.txt`
 3.  Run migrations: `python manage.py migrate`
-4.  Start the development server: `python manage.py runserver`
+4.  Run docker: `docker run --name postgres-db -e POSTGRES_DB=postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=123456 -p 5432:5432 -d postgres`
+5.  Start the development server: `python manage.py runserver`
 
 ## API Endpoints
 
